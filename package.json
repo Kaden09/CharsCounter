@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "classix": "^2.2.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sass": "^1.85.1",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
