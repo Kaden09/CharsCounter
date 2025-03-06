@@ -1,10 +1,14 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./global.scss";
 import { MainPage } from "../pages/index.ts";
+import ThemeProvider from "./providers/ThemeProvider.tsx";
+import "./global.scss";
+import "./theme.scss";
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <MainPage />
-  </StrictMode>,
+  <ThemeProvider>
+    <StrictMode>
+      <MainPage />
+    </StrictMode>
+  </ThemeProvider>,
 );

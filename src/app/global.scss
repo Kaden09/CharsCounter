@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 * {
   padding: 0;
@@ -9,10 +9,11 @@
 
 body {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
   gap: 10px;
   height: 100vh;
-  background: #17171f;
+  background: var(--background-color);
+  transition: all 0.2s ease;
 }
