@@ -1,0 +1,19 @@
+.textarea {
+  font-size: 10px;
+  width: 740px;
+  height: 150px;
+  background: var(--secondary-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 20px;
+  outline: none;
+  color: var(--text-color);
+  resize: none;
+  transition: all 0.2s;
+  
+  &::placeholder {
+    font-size: 20px;
+    color: var(--text-color);
+    transition: all 0.2s;
+  }
+}
