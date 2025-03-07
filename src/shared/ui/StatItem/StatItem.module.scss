@@ -1,0 +1,23 @@
+.stat-item {
+  position: relative;
+  padding: 10px 20px 20px;
+  border-radius: 10px;
+  width: 240px;
+  color: var(--secondary-text-color);
+  
+  .stat-value {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  &__violet {
+    background: var(--chars-color)
+  }
+  &__yellow {
+    background: var(--words-color)
+  }
+  &__red {
+    background: var(--sentences-color)
+  }
+}
+
