@@ -13,5 +13,7 @@
 
   &::placeholder {
     font-size: 20px;
+    color: var(--text-color);
+    transition: all 0.2s;
   }
   }
