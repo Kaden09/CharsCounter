@@ -1,6 +1,6 @@
 import styles from "./MainPage.module.scss";
 import { Header, Stats } from "../../widgets/index.ts";
-import { Textarea, ReadingTime } from "../../shared/ui/index.ts";
+import { Textarea, ReadingTime, Checkbox } from "../../shared/ui/index.ts";
 import { useState } from "react";
 
 function MainPage() {
@@ -15,6 +15,7 @@ function MainPage() {
       <Header />
       <h2 className={styles.title}>Analyze your text in real-time.</h2>
       <Textarea onChange={handleTextChange} />
+			<Checkbox label="Exclude Spaces" />
       <ReadingTime text={text} />
       <Stats text={text} />
     </div>
