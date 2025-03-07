@@ -1,13 +1,20 @@
 import styles from "./MainPage.module.scss";
-import { Header } from "../../widgets/index.ts";
-import { Textarea, StatItem } from "../../shared/ui/index.ts";
+import { Header, Stats } from "../../widgets/index.ts";
+import { Textarea } from "../../shared/ui/index.ts";
+import { useState } from "react";
 
 function MainPage() {
+  const [text, setText] = useState("");
+
+  function handleTextChange(e: React.ChangeEvent<HTMLTextAreaElement>) {
+    setText(e.target.value);
+  }
+
   return (
     <div className={styles.wrapper}>
       <Header />
-      <Textarea />
-      <StatItem statLabel="Chars counter" background="yellow" />
+      <Textarea onChange={handleTextChange} />
+      <Stats text={text} />
     </div>
   );
 }

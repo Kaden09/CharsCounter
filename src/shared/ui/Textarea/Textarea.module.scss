@@ -10,10 +10,8 @@
   color: var(--text-color);
   resize: none;
   transition: all 0.2s;
-  
+
   &::placeholder {
     font-size: 20px;
-    color: var(--text-color);
-    transition: all 0.2s;
   }
-}
+  }
