@@ -1,6 +1,5 @@
 import styles from "./MainPage.module.scss";
-import { Header, Stats } from "../../widgets/index.ts";
-import { Textarea, ReadingTime, Checkbox } from "../../shared/ui/index.ts";
+import { Header, Stats, InputArea } from "../../widgets/index.ts";
 import { useState } from "react";
 
 function MainPage() {
@@ -13,10 +12,7 @@ function MainPage() {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <h2 className={styles.title}>Analyze your text in real-time.</h2>
-      <Textarea onChange={handleTextChange} />
-			<Checkbox label="Exclude Spaces" />
-      <ReadingTime text={text} />
+      <InputArea onChange={handleTextChange} text={text} />
       <Stats text={text} />
     </div>
   );

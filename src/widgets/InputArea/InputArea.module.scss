@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+
+  .title {
+    font-size: 50px;
+    color: var(--text-color);
+    width: 450px;
+    text-align: center;
+    transition: all 0.2s;
+  }
+
+  .input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    
+    .additional-info {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
