@@ -1,7 +1,9 @@
 import styles from "./Textarea.module.scss";
-import { ITextarea } from "./Textarea.interface.ts";
+import { useText } from "../../contexts/index.ts";
 
-function Textarea({ onChange }: ITextarea) {
+function Textarea() {
+  const { onChange } = useText();
+
   return (
     <textarea
       onChange={onChange}

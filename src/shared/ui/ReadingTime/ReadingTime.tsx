@@ -1,8 +1,9 @@
 import styles from "./ReadingTime.module.scss";
-import { IReadingTime } from "./ReadingTime.interface.ts";
 import { useState, useEffect } from "react";
+import { useText } from "../../contexts/index.ts";
 
-function ReadingTime({ text }: IReadingTime) {
+function ReadingTime() {
+  const { text } = useText();
   const [time, setTime] = useState(0);
 
   useEffect(() => {

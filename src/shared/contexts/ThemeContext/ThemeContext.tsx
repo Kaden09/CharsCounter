@@ -13,7 +13,7 @@ function ThemeProvider({ children }: IThemeProvider) {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  const toggleTheme = () => {
+  function toggleTheme() {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
