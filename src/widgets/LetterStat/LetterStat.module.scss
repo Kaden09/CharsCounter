@@ -1,0 +1,23 @@
+.letter-stat {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  color: var(--text-color);
+  transition: all 0.2s;
+
+  .progressbar {
+    width: 100%;
+    height: 13px;
+    border-radius: 10px;
+    background: var(--secondary-background-color);
+    overflow: hidden;
+    transition: inherit;
+  }
+
+  .progress {
+    width: 20%;
+    height: 100%;
+    background: var(--chars-color);
+  }
+}
