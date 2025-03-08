@@ -4,20 +4,24 @@ import { useState, useEffect } from "react";
 import { useText } from "../../shared/contexts/index.ts";
 
 function Stats() {
-  const { text } = useText();
+  const { text, spacesChecked } = useText();
 
   const [chars, setChars] = useState(0);
   const [words, setWords] = useState(0);
   const [sentences, setSentences] = useState(0);
 
   useEffect(() => {
-    setChars(text.length);
+    if (spacesChecked) {
+      setChars(text.split(" ").join("").length);
+    } else {
+      setChars(text.length);
+    }
     setWords(
       text.split(/[\s,.\!?;:@()\[\]"'{}=_$<>\u00AB\u00BB]+/).filter((el) => el)
         .length,
     );
     setSentences(text.split(/\. |\! |\? |[.\!?;]+/).filter((el) => el).length);
-  }, [text]);
+  }, [text, spacesChecked]);
 
   return (
     <div className={styles["stats"]}>

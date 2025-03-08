@@ -8,13 +8,18 @@ const TextContext = createContext<ITextContext>({
 
 function TextProvider({ children }: ITextProvider) {
   const [text, setText] = useState("");
+	const [spacesChecked, setSpacesChecked] = useState(false);
 
   function onChange(e: React.ChangeEvent<HTMLTextAreaElement>) {
     setText(e.target.value);
   }
 
+	function onCheckbox(){
+		setSpacesChecked(!spacesChecked);
+	}
+
   return (
-    <TextContext.Provider value={{ text, onChange }}>
+    <TextContext.Provider value={{ text, onChange, spacesChecked, onCheckbox }}>
       {children}
     </TextContext.Provider>
   );
