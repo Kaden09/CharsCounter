@@ -6,6 +6,7 @@ function StatItem({
   statValue = 0,
   statLabel = "",
   background = "violet",
+  icon,
   className = "",
 }: IStatItem) {
   const clx = cx(
@@ -18,6 +19,7 @@ function StatItem({
     <div className={clx}>
       <div className={styles["stat-value"]}>{statValue ? statValue : "00"}</div>
       <p className={styles["stat-label"]}>{statLabel}</p>
+      <div className={styles.icon}>{icon}</div>
     </div>
   );
 }

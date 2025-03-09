@@ -2,6 +2,7 @@ import styles from "./Stats.module.scss";
 import { StatItem } from "../../shared/ui/index.ts";
 import { useState, useEffect } from "react";
 import { useText } from "../../shared/contexts/index.ts";
+import { CharsIcon, WordsIcon, SentencesIcon } from "../../assets/index.ts";
 
 function Stats() {
   const { text, spacesChecked } = useText();
@@ -29,16 +30,19 @@ function Stats() {
         statValue={chars}
         statLabel="Chars Counter"
         background="violet"
+        icon={<CharsIcon />}
       />
       <StatItem
         statValue={words}
         statLabel="Words Counter"
         background="yellow"
+        icon={<WordsIcon />}
       />
       <StatItem
         statValue={sentences}
         statLabel="Sentences Counter"
         background="red"
+        icon={<SentencesIcon />}
       />
     </div>
   );

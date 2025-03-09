@@ -4,11 +4,19 @@
   border-radius: 10px;
   width: 100%;
   color: var(--secondary-text-color);
+  overflow: hidden;
   transition: all 0.2s;
   
   .stat-value {
     font-size: 50px;
     font-weight: 700;
+  }
+
+  .icon {
+    position: absolute;
+    right: -100px;
+    top: -50px;
+    transform: scale(0.6);
   }
 
   &__violet {
