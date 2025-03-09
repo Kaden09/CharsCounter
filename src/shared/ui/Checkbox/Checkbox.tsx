@@ -6,17 +6,16 @@ function Checkbox({ label }: ICheckbox) {
   const { onCheckbox } = useText();
 
   return (
-    <div className={styles["checkbox-wrapper"]}>
+    <label className={styles["checkbox-label"]} htmlFor="checkbox">
       <input
         className={styles.checkbox}
         type="checkbox"
         id="checkbox"
         onChange={onCheckbox}
       />
-      <label className={styles["checkbox-label"]} htmlFor="checkbox">
-        {label}
-      </label>
-    </div>
+      <span className={styles["custom-checkbox"]}></span>
+      {label}
+    </label>
   );
 }
 
