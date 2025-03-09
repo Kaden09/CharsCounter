@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  transition: all 0.2s;
+
+  .title {
+    color: var(--text-color);
+    transition: inherit;
+  }
+
+  .empty-message {
+    color: var(--text-color);
+    transition: inherit;
+  }
+}
