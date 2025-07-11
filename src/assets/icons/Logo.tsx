@@ -3,8 +3,8 @@ import "./general.scss";
 function Logo() {
   return (
     <svg
-      width="60"
-      height="60"
+      width="clamp(3.125rem, 2.679rem + 1.19vw, 3.75rem)"
+      height="clamp(3.125rem, 2.679rem + 1.19vw, 3.75rem)"
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"

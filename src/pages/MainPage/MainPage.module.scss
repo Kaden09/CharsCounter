@@ -3,5 +3,5 @@
   align-items: center;
   flex-direction: column;
   gap: 40px;
-  width: 740px;
+  width: clamp(18.75rem, -0.893rem + 52.381vw, 46.25rem);
 }

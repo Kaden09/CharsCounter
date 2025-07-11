@@ -1,14 +1,15 @@
 .stat-item {
+  flex: 1;
   position: relative;
   padding: 10px 20px 20px;
   border-radius: 10px;
-  width: 100%;
+  min-width: 140px;
   color: var(--secondary-text-color);
   overflow: hidden;
   transition: all 0.2s;
   
   .stat-value {
-    font-size: 50px;
+    font-size: clamp(2.5rem, 2.054rem + 1.19vw, 3.125rem);
     font-weight: 700;
   }
 
@@ -16,6 +17,7 @@
     position: absolute;
     right: -100px;
     top: -50px;
+    z-index: 1;
     transform: scale(0.6);
   }
 

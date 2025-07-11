@@ -1,6 +1,6 @@
 .time {
   font-size: 13px;
-  margin-top: 2px;
+  width: clamp(8.125rem, 5.67rem + 6.548vw, 11.563rem);
   color: var(--text-color);
   transition: all 0.2s;
 }

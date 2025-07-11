@@ -6,9 +6,9 @@
   width: 100%;
 
   .title {
-    font-size: 50px;
+    font-size: clamp(1.875rem, 0.982rem + 2.381vw, 3.125rem);
     color: var(--text-color);
-    width: 450px;
+    width: clamp(15.625rem, 6.696rem + 23.81vw, 28.125rem);
     text-align: center;
     transition: all 0.2s;
   }

@@ -4,7 +4,7 @@
   align-items: center;
   gap: 10px;
   width: 180px;
-  font-size: 10px;
+  font-size: clamp(0.5rem, 0.411rem + 0.238vw, 0.625rem);
   line-height: 22px;
   color: var(--text-color);
   transition: all 0.2s;
